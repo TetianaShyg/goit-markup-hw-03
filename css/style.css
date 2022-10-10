@@ -89,6 +89,9 @@ body {
 .list-navig:not(:last-child) {
   margin-right: 50px;
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-list {
   display: flex;
 }
@@ -147,6 +150,7 @@ body {
 .site-nav {
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 .site-examples {
   display: flex;
@@ -180,7 +184,10 @@ body {
   padding-top: 200px;
   padding-bottom: 203px;
 }
-
+.hero-title {
+  max-width: 696px;
+  margin: 0 auto;
+}
 .example-block {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
