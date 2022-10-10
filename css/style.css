@@ -143,12 +143,11 @@ body {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  padding: 6px 22px;
 }
 .site-nav {
   display: flex;
-}
-.button-list:not(:last-child) {
-  margin-left: 8px;
+  gap: 8px;
 }
 .site-examples {
   display: flex;
@@ -270,13 +269,6 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
-.team-items {
-  width: calc(100% - 90px / 4) - 30px;
-  gap: 30px;
-}
-.team-items:not(:last-child) {
-  margin-right: 30px;
-}
 .team-position {
   font-weight: 400;
   font-size: 16px;
@@ -290,6 +282,10 @@ body {
 .team-list {
   background-color: var(--white-color);
   display: flex;
+  gap: 30px;
+}
+.team-items {
+  width: calc((100% - 90px) / 4);
 }
 .site-nav {
   margin-bottom: 34px;
