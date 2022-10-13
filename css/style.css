@@ -26,6 +26,9 @@ ol {
 }
 button {
   cursor: pointer;
+  display: block;
+  border: none;
+  border-radius: 4px;
 }
 address {
   font-style: normal;
@@ -48,6 +51,8 @@ body {
 }
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -146,11 +151,17 @@ body {
   display: block;
   margin: 0 auto;
   padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
 }
 .site-nav {
   display: flex;
   gap: 8px;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.section-work {
+  padding-top: 0;
 }
 .site-examples {
   display: flex;
@@ -179,7 +190,7 @@ body {
   color: var(--white-color);
   background-color: var(--blue-color);
 }
-.section-one {
+.section-hero {
   background-color: var(--bg-darkgray);
   padding-top: 200px;
   padding-bottom: 203px;
@@ -191,6 +202,7 @@ body {
 .example-block {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .team-member {
@@ -206,7 +218,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 .button-nav-main {
   font-weight: 700;
@@ -246,15 +258,7 @@ body {
 }
 .work-pictures {
   display: flex;
-}
-.work-item-one {
-  flex-grow: 1;
-}
-.work-item-two {
-  flex-grow: 1;
-}
-.work-item-trhee {
-  flex-grow: 1;
+  gap: 30px;
 }
 .list-item-description {
   font-weight: 400;
@@ -286,16 +290,17 @@ body {
   background-color: var(--bg-ivory);
 }
 .team-list {
-  background-color: var(--white-color);
   display: flex;
   gap: 30px;
 }
 .team-items {
   width: calc((100% - 90px) / 4);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.site-nav {
-  margin-bottom: 34px;
-}
+
 /* ---FOOTER---- */
 .footer-logo {
   font-family: "raleway", sans-serif;
@@ -308,16 +313,17 @@ body {
 .footer-item {
   display: block;
 }
-.footer-address {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .logo-footer {
   color: var(--white-color);
 }
 .address {
   margin-top: 20px;
 }
-.footer-nav {
+.section-footer {
   background-color: var(--bg-darkgray);
   padding-top: 60px;
   padding-bottom: 60px;
